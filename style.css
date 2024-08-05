@@ -75,12 +75,17 @@ article {
     margin-bottom: 20px;
     padding: 10px;
     box-sizing: border-box;
+    transition: flex-basis 0.2s linear;
 }
 
 article h2 {
     text-align: center;
     margin: 10px 0;
     font-size: 20px;
+}
+
+article.stack {
+    flex: 0 1 100%;
 }
 
 /* media query */

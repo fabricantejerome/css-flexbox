@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Flexbox</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -21,6 +22,12 @@
                 <li><a href="" class="tw">Twitter</a></li>
             </ul>
         </nav>
+
+        <div style="margin: 20px">
+            <span>Layout:</span>
+            <a href="#" class="stack">Stack</a>
+            <a href="#" class="grid">Grid</a>
+        </div>
 
         <section id="blocks">
             <article>
@@ -49,5 +56,15 @@
             </article>
         </section>
     </div>
+
+    <script>
+        $("a.stack").on("click", () => {
+            $("article").addClass("stack")
+        })
+
+        $("a.grid").on("click", () => {
+            $("article").removeClass("stack")
+        })
+    </script>
 </body>
 </html>
